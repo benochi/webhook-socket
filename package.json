@@ -1,0 +1,14 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run start:mock-api\" \"npm run start:server\" \"npm run start:client\"",
+    "start:mock-api": "cd mock-api && npm start",
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0"
+  }
+}

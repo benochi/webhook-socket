@@ -1,0 +1,4 @@
+node_modules/
+client/node_modules/
+mock-api/node_modules/
+server/node_modules/
