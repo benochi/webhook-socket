@@ -19,7 +19,7 @@ app.post('/webhook', (req, res) => {
       console.error('Error sending to Node/Express server:', error);
       res.status(500).send('Error sending to Node/Express server');
     }
-  }, 10000);
+  }, 5000);
 });
 
 app.listen(port, () => {
